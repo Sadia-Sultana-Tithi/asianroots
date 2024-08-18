@@ -1,0 +1,46 @@
+.header{
+  background-color: rgba(140, 52, 52, 0.29);
+}
+
+.col-1{
+  width: 20%;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+.a{
+  height: 640px;
+  width: 1356px;
+  background-image: url("images/back1.jpg");
+}
+
+.col-3 {
+  width: 40%;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.col-2 {
+  width: 20%;
+  padding-top: 10px;
+}
+.col-4{
+width: 20%;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.col {
+  display: block;
+  float: left;
+  height: 100%;
+  box-sizing: border-box;
+}
+input{
+  line-height: 70px;
+}
+.box{
+  float: left;
+  width: 80%;
+  background: white;
+  border: 1px solid black;
+}
