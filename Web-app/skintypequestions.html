@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Detect Skin Type</title>
+	<link rel="stylesheet" href="skintypequestions.css">
+
+</head>
+<body>
+ <div class=left>  
+<form name="myForm" action=" abc.php" onsubmit="return validateForm()" method="post" >
+
+
+    <fieldset>
+        
+        <legend><h2>Select to Detect Your Skin Type</h2></legend>
+
+	<p>1. Texture of your skin :</p>
+
+				<input type="radio"  name="q0" value="0"> Does not Shine<br>
+                <input type="radio"  name="q0"value="1">Is dry and sometimes slight flaking may appear<br>
+                <input type="radio"   name="q0" value="2">Shines on the nose<br>
+                <input type="radio"   name="q0" value="2">Shines all-over <br><br>
+
+    <p>2. Appearance of pores on your skin:</p>
+
+				<input type="radio"  name="q1" value="0">Normal<br>
+                <input type="radio"  name="q1"value="1">Very fine<br>
+                <input type="radio"  name="q1" value="2">Visible<br>
+                <input type="radio"  name="q1" value="2">Very opened<br><br>
+	<p>3. How does your skin look like?:</p>
+
+				<input type="radio"  name="q3" value="0">Cool, fresh, and supple<br>
+                <input type="radio"  name="q3"value="1">Thin and lacking moisture<br>
+                <input type="radio"  name="q3" value="2">Shines on the "T" zone<br>
+                <input type="radio"  name="q3" value="2">Shines and has a tendency for acne<br><br>
+
+    <p>4. How does your skin feel when touched?:</p>
+
+				<input type="radio"  name="q4" value="0">Supple<br>
+                <input type="radio"  name="q4"value="1">Dry or very dry<br>
+                <input type="radio"  name="q4" value="2">Oily on the forehead and nose<br>
+                <input type="radio"  name="q4" value="2">Oily all over<br><br>
+
+    <p>5. How often do you feel tightness around the eyes and mouth area:</p>
+
+				<input type="radio"  name="q5" value="0">Very often<br>
+                <input type="radio"  name="q5"value="1">Regularly<br>
+                <input type="radio"  name="q5" value="2">Sometimes<br>
+                <input type="radio"  name="q5" value="2">Never<br><br>
+         
+			<button>Submit</button>
+
+
+
+</fieldset>
+</form>
+</div>
+<div class="right"> <img src="images/asianroots.jpg" width="300" height="100"></div>
+    <script>
+    	function validateForm(){
+
+		    	
+		         if( document.myForm.q0.value == "0" || document.myForm.q1.value == "0"||document.myForm.q2.value == "0" || document.myForm.q3.value == "0" ) {
+		            alert( "You have Dry skin!" );
+		            return false;
+
+		         }
+		         if( document.myForm.q0.value == "1" || document.myForm.q1.value == "1"|| document.myForm.q2.value == "1"|| document.myForm.q3.value == "1" ) {
+		            alert( "You have Normal skin!" );
+		            return false;
+		        }
+
+		        if( document.myForm.q0.value == "2" || document.myForm.q1.value == "2"|| document.myForm.q2.value == "2"|| document.myForm.q3.value == "2") {
+		            alert( "You have Oily skin!" );
+		            return false;
+		        }
+
+		         if( document.myForm.q0.value == "3" || document.myForm.q1.value == "3"|| document.myForm.q2.value == "3"|| document.myForm.q3.value == "3" ) {
+		            alert( "You have Combination skin!" );
+		            return false;
+		        }
+
+
+			return true;
+       }
+    </script>
+    <style>
+    	body{
+    		background-image: url("images/back1.jpg");
+    	}
+    	.left{
+    		float: right;
+    		margin-right: 350px;   	
+    	}
+    	.right{
+    		float:left;
+   
+    	}
+    	fieldset{
+    		background-color: rgba(140, 52, 52, 0.29);
+    	}
+        form {
+            width: 500px;
+            padding: 15px 40px 40px;
+            margin-left: 30px auto 0;
+            border-radius: 5px;
+            background-color: rgba(140, 52, 52, 0.29);
+        }
+      input{
+            border: 1px solid #ccc;
+            margin-left: 10px;
+            border-radius: 2px;
+            position: center;
+        }
+          
+</style>
+
+</body>
+
+
+
+</html>

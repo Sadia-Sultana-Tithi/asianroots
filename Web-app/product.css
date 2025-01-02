@@ -1,0 +1,52 @@
+
+.top{
+  display: block;
+  height: 100%;
+}
+
+.block1 {
+  padding-top: 30px;
+  width: 20%;
+  float: left;
+  text-align: center;
+  
+}
+.block2 {
+  float: left;
+  padding-top:30px ;
+  width: 20%;
+  text-align: center;
+}
+
+.block3 {
+  float: left;
+  padding-top:30px ;
+  width: 20%;
+  text-align: center;
+}
+
+.block4 {
+  float: left;
+  padding-top:30px ;
+  width: 20%;
+  text-align: center;
+}
+.block5 {
+  padding-top: 30px;
+  float: right;
+  width: 20%;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.header{
+
+  background-color: rgba(140, 52, 52, 0.29)
+}
+
+
+
+
